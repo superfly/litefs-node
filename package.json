@@ -1,0 +1,34 @@
+{
+  "name": "@flydotio/litefs",
+  "version": "0.0.1",
+  "description": "This Node.js library is for interacting with LiteFS features that cannot be accessed through the typical SQLite API.",
+  "scripts": {
+    "build": "node-gyp build && tsc",
+    "install": "node-gyp rebuild"
+  },
+  "main": "lib/litefs.js",
+  "gypfile": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superfly/litefs-node.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "litefs"
+  ],
+  "author": "Sam Ruby",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/superfly/litefs-node/issues"
+  },
+  "homepage": "https://github.com/superfly/litefs-node#readme",
+  "dependencies": {
+    "node-addon-api": "^1.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.22",
+    "typescript": "^5.1.3"
+  }
+}
